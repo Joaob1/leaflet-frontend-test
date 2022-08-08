@@ -35,6 +35,7 @@ html, body {
 }
 .historico{
     pointer-events: all;
+    border-radius: 6px;
     border: 2px solid #000000;
     position: absolute;
     bottom: 3px;
@@ -54,11 +55,17 @@ html, body {
 }
 .historico::-webkit-scrollbar-track{
     background-color: #bebebe;
+    border-radius: 6px;
 }
 .historico::-webkit-scrollbar-thumb{
     border-radius: 20px;
     border: 1px solid #bebebe;
     background-color: #6a6a6a;
+}
+@media (max-width: 510px){
+    .historico{
+        width: 100vw;
+    }
 }
 .historico div{
     animation: surgindo 0.5s linear;
